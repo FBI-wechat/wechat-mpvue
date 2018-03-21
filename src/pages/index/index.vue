@@ -7,7 +7,7 @@
         <card :text="userInfo.nickName"></card>
       </div>
     </div>
-    
+
     <div class="usermotto">
       <div class="user-motto">
         <card :text="motto"></card>
@@ -18,13 +18,12 @@
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
-    {{login}}
+
     <card text='测试'></card>
   </div>
 </template>
 
 <script>
-import {mapState,mapMutations,mapGetters,mapActions} from 'vuex'
 import card from '@/components/card'
 
 export default {
@@ -35,21 +34,12 @@ export default {
     }
   },
   computed:{
-    ...mapState([
-      'login'
-    ])
   },
   components: {
     card
   },
 
   methods: {
-    ...mapMutations([
-    'changeLogin',
-    ]),
-    ...mapActions([ 
-
-    ]),
     bindViewTap () {
       const url = '../logs/logs'
       wx.navigateTo({ url })
