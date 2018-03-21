@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import App from './App'
-// vuex
-import Vuex from 'vuex'
-Vue.use(Vuex);
-
 import store from './store'
 
 Vue.config.productionTip = false
-App.mpType = 'app'
 
-const app = new Vue(App)
+const app = new Vue({
+  store,
+  ...App
+})
 app.$mount()
 
 export default {

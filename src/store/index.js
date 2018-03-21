@@ -4,7 +4,7 @@ Vue.use(Vuex);
 
 const state = {			//状态对象
 	login:{
-		show: true
+		num: 123
 	}
 }
 const mutations = {		//触发状态的方法，同步,第一个参数默认state，第二个参数自定义
