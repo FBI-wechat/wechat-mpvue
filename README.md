@@ -1,5 +1,5 @@
 # my-project
-
+mpvue小程序框架内部探索项目
 > A Mpvue project
 
 ## Build Setup
@@ -19,3 +19,5 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
